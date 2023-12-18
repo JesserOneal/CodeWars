@@ -17,7 +17,7 @@ const mean = (lst) => {
     let number = 0;
     let str = '';
     lst.forEach(n => 
-        (!isNaN(n)) ? number += +n : str += n
+        (!isNaN(n)) ? number += Number(n) : str += n
     )
     return [number / 10, str]
 }
