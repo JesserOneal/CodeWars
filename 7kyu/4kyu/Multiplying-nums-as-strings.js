@@ -9,7 +9,7 @@
 
 //Solution Attempt
 function multiply(a, b) {
-    const value = Number(a) * Number(b);
+    let value = Number(a) * Number(b);
     return BigInt(value).toString()
   }
   
