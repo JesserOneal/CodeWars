@@ -13,23 +13,19 @@ function seaSick(x){
     const array = x.split('');
     for(let i = 0; i < array.length; i++){
         let current = array[0];
-       if(array[i] !== current){
-        current = array[i];
-        count += 1
+        if(array[i] !== current){
+            current = array[i];
+            count += 1
        }
     }
+    console.log(array.length)
+    console.log(array.length * .2)
+    console.log(count)
     return (array.length * .2) < count ? "Throw Up" : "No Problem"
-}
-
-function seaSick(x){
-    let count = 0;
-    x.split('').forEach((e,i) => {
-        return e[i] !==
-    })
 }
 
 // Test Cases
 
-console.log(seaSick("~"), "No Problem")
-console.log(seaSick("_~~~~~~~_~__~______~~__~~_~~"), "Throw Up")
+console.log(seaSick("~"), "No Problem");
+console.log(seaSick("_~~~~~~~_~__~______~~__~~_~~"), "Throw Up");
 console.log(seaSick("______~___~_"), "Throw Up")
